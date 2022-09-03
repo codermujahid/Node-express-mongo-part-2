@@ -1,0 +1,25 @@
+[
+    {
+        "id"      : 1,
+        "title"   : "Start building today. It's your turn. ",
+        "subtitle": "INTERACTIVE DESIGN STUDIO",
+        "photo"  : "https://soliloquywp.com/wp-content/uploads/2019/04/nb_esc_cover.jpg",
+        "btn1"  : "Read More",
+        "btn2"  : "Read More"
+    },{
+        "id"      : 2,
+        "title"   : "Enjoy our take-away menu.",
+        "subtitle": "WELCOME TO COMET ",
+        "photo"  : "https://soliloquywp.com/wp-content/uploads/2018/11/nb_ist_cover.jpg",
+        "btn1"  : "Read More",
+        "btn2"  : "Read More"
+    },{
+        "id"      : 3,
+        "title"   : "Start building today. It's your turn. ",
+        "subtitle": "INTERACTIVE DESIGN STUDIO",
+        "photo"  : "https://soliloquywp.com/wp-content/uploads/2016/06/html-slider-wordpress.jpg",
+        "btn1"  : "Read More",
+        "btn2"  : "Read More"
+    }
+    
+]

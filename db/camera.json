@@ -1,0 +1,30 @@
+[
+    {
+        "id"        : 1,
+        "title"     : "Dog Camera", 
+        "photo"     : "https://m.media-amazon.com/images/I/51lGcD26GoL._AC_SL1000_.jpg",
+        "price"     : "$200",
+        "cartbtn"     : "ADD TO CART"
+        
+    },
+    {
+        "id"        : 2,
+        "title"     : "Security Camera 2K", 
+        "photo"     : "https://m.media-amazon.com/images/I/611uxt2J2SL._AC_SL1500_.jpg",
+        "price"     : "$760",
+        "cartbtn"     : "ADD TO CART"
+        
+    },
+    
+    {
+        "id"        : 3,
+        "title"     : "Dog Camera", 
+        "photo"     : "https://m.media-amazon.com/images/I/713qhtEOq5L._SL1500_.jpg",
+        "price"     : "$620",
+        "cartbtn"     : "ADD TO CART"
+        
+    } 
+    
+
+    
+]

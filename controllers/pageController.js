@@ -1,19 +1,87 @@
-const path = require('path');
+ 
+
+const {readFile, readFileSync}= require('fs');
+const { join } = require('path');
+const path= require('path');
 
 
-// home page controller
-const showHomepage = (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, '../public/index.html'))
-}
+ // home page
+ const showHomePage = (req, res) => {
 
-// home page controller
-const showAboutpage = (req, res) => {
-    res.status(200).sendFile(path.join(__dirname, '../public/about.html'))
-}
+   const slider = readFileSync(path.join(__dirname, '../db/slider.json'));
+    const posts = readFileSync(path.join(__dirname, '../db/blog.json'));
+
+    res.render('index', { 
+      slider : JSON.parse(slider.toString()),
+      posts : JSON.parse(posts.toString())
+    });
+
+   
+
+ }
+  
+
+//  show Single BlogPage  
+ const showSingleBlogPage = (req, res) => {
+
+  const posts = JSON.parse(readFileSync(path.join(__dirname, '../db/blog.json')));
+
+  const single_post = posts.find( data => data.id == req.params.id );
+
+  res.render('single', { 
+    post :  single_post
+  });
+
+ }
+
+
+ 
+
+ //  shop-3col page
+ const showShopPage = (req, res) => {
+
+  const shops =  readFileSync(path.join(__dirname, '../db/shop.json'));
+
+    res.render('shop-3col', {  
+
+      shops : JSON.parse(shops.toString())
+
+    });
+ }
+
+ //  shop-3col page
+ const showCameraPage = (req, res) => {
+
+  const camera =  readFileSync(path.join(__dirname, '../db/camera.json'));
+
+    res.render('camera', {  
+
+      camera : JSON.parse(camera.toString())
+
+    });
+ }
 
 
 
-module.exports = {
-    showHomepage,
-    showAboutpage
-}
+
+ //  show Portfolio Page
+ const showPortfolioPage = (req, res) => {
+
+    res.render('portfolio-boxed-3col');
+ }
+
+
+ // export 
+ module.exports = {
+   showHomePage,
+   showSingleBlogPage,
+   showShopPage,
+   showPortfolioPage,
+   showCameraPage
+
+   
+ }
+
+ 
+
+ 
