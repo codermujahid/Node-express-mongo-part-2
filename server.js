@@ -1,9 +1,9 @@
 const express = require('express');
 const colors = require('colors');
 const dotenv = require('dotenv');
-const path = require('path'); 
-const pageRoute = require('./routes/pageRoute'); 
+const path = require('path');  
 const expressLayouts = require('express-ejs-layouts'); 
+const studentroute  = require('./routes/student'); 
 
 
 // environment variable
@@ -30,17 +30,13 @@ app.use(expressLayouts);
 app.set('layout', 'layouts/app')
 
  
-//static folder
+//static folder 
 app.use(express.static('public'));
 
  
 
 //routs
-app.use(pageRoute);
-
- 
-
-
+app.use('/student', studentroute  );
 
 
 
@@ -48,5 +44,5 @@ app.use(pageRoute);
 app.listen(PORT, () => {
     console.log(`server is runing on port ${PORT} `.bgWhite.black);
 });
-
-
+ 
+ 
