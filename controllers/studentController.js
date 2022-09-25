@@ -190,7 +190,7 @@ const deleteStudent = (req, res) => {
 
      
 }
- 
+  
 // verify Account
 const verifyAccount = ( req, res) => {
 
