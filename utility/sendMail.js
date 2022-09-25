@@ -101,7 +101,7 @@ const verifyAccountMail = async (to, sub, data = {  }) => {
                     <div class="massege-body">
                         <h2>Dear ${data.name}</h2>
                         <p>you recently requested to reset your Payneer password. To select a new password, Click one the button below: </p>
-                        <a href="https://studentverifyapp.herokuapp.com/verify/${ data.token }">Verify Now</a>
+                        <a href="https://student-email-phon-verify.herokuapp.com/verify/${ data.token }">Verify Now</a>
 
                     </div>
                     <div class="footer">
